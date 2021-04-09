@@ -38,7 +38,7 @@ public class LocationManager {
     }
     
     private static String[] getRequiredPermissions() {
-        if(android.os.Build.VERSION.SDK_INT <= Build.VERSION_CODES.P) {
+        if(android.os.Build.VERSION.SDK_INT <= android.os.Build.VERSION_CODES.P) {
             return new String[]{
                     Manifest.permission.ACCESS_COARSE_LOCATION,
                     Manifest.permission.ACCESS_FINE_LOCATION
